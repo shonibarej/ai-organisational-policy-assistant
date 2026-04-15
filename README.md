@@ -57,15 +57,10 @@ OPENAI_API_KEY=your_openai_api_key_here
 ---
 
 ### 3. Build the Vector Database
-```bash
-python build_vector_db.py
-```
 
-This step:
-- Loads PDF documents from the `Data/` folder  
-- Splits them into chunks (500 size, 100 overlap)  
-- Generates embeddings using `text-embedding-3-small`  
-- Stores them in `chroma_db/`  
+The application automatically builds the vector database on first run if it does not already exist.
+
+Ensure that PDF policy documents are placed in the `Data/` folder before running the application. The system will process and index these documents for semantic search.  
 
 ---
 
@@ -105,7 +100,7 @@ These support the evaluation conducted during the project.
 ---
 
 ## Notes
-- The vector database must be built before running the app  
+- The vector database is built automatically on first run   
 - Rebuild the database if policy documents are updated   
 
 ---
