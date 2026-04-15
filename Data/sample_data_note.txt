@@ -1,0 +1,5 @@
+This folder contains the policy documents used by the RAG system.
+
+For security and confidentiality, the original documents are not included in this repository.
+
+To run the application, add your own policy documents (PDF or DOCX format) to this folder before building the vector database.
