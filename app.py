@@ -1,15 +1,37 @@
 import streamlit as st
+import os
+from pathlib import Path
 from dotenv import load_dotenv
+from build_vector_db import build_vector_database
+
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_chroma import Chroma
 from langchain_core.prompts import PromptTemplate
 
+
+st.set_page_config(page_title="Policy Assistant", layout="centered")
+
 load_dotenv()
+
+PERSIST_DIRECTORY = "./chroma_db"
+
+# Ensure Data folder exists
+if not Path("Data").exists():
+    st.error("Data folder not found.")
+    st.stop()
+
+# Build DB only once
+if "db_built" not in st.session_state:
+    if not os.path.exists(PERSIST_DIRECTORY):
+        with st.spinner("Setting up knowledge base... please wait ⏳"):
+            build_vector_database()
+        st.success("Knowledge base ready ✅")
+    st.session_state.db_built = True
 
 # ----------------------------
 # Page Config
 # ----------------------------
-st.set_page_config(page_title="Policy Assistant", layout="centered")
+
 
 st.title("📘 Employee Policy Assistant")
 st.caption("Ask questions about organizational policies.")
@@ -21,8 +43,9 @@ st.caption("Ask questions about organizational policies.")
 # ----------------------------
 embedding_model = OpenAIEmbeddings(model="text-embedding-3-small")
 
+
 vectorstore = Chroma(
-    persist_directory="./chroma_db",
+    persist_directory=PERSIST_DIRECTORY,
     embedding_function=embedding_model
 )
 
