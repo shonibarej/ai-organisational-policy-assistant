@@ -12,6 +12,10 @@ The system uses a Retrieval-Augmented Generation (RAG) approach to retrieve rele
 ![Main Interface](screenshots/main.PNG)
 ![Example Query](screenshots/query.PNG)
 
+## Demo
+Here is the link to the live application: https://your-app-name.streamlit.app
+
+
 ## Features
 - Natural language querying of policy documents
 - Semantic search using vector embeddings
