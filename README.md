@@ -9,8 +9,8 @@ This system can be used within organisations to provide employees with quick and
 The system uses a Retrieval-Augmented Generation (RAG) approach to retrieve relevant policy content and generate accurate, context-aware responses. It enables users to ask questions in plain English and receive grounded answers directly from internal policy documents.
 
 ## Screenshots
-![Main Interface](screenshots/main.png)
-![Example Query](screenshots/query.png)
+![Main Interface](screenshots/main.PNG)
+![Example Query](screenshots/query.PNG)
 
 ## Features
 - Natural language querying of policy documents
