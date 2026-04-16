@@ -12,6 +12,10 @@ The system uses a Retrieval-Augmented Generation (RAG) approach to retrieve rele
 ![Main Interface](screenshots/main.PNG)
 ![Example Query](screenshots/query.PNG)
 
+## Example Questions
+- How many leave days am I entitled to?
+- What is the remote work policy?
+
 ## Demo
 Here is the link to the live application: https://your-app-name.streamlit.app
 
