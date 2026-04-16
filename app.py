@@ -36,6 +36,12 @@ if "db_built" not in st.session_state:
 st.title("📘 Employee Policy Assistant")
 st.caption("Ask questions about organizational policies.")
 
+st.markdown("### 💡 Example Questions")
+st.markdown("""
+- How many leave days am I entitled to?  
+- What is the remote work policy?   
+- How do I request time off?  
+""")
 
 
 # ----------------------------
