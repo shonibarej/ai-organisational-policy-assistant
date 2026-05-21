@@ -17,7 +17,7 @@ The system uses a Retrieval-Augmented Generation (RAG) approach to retrieve rele
 - What is the remote work policy?
 
 ## Demo
-Here is the link to the live application: https://your-app-name.streamlit.app
+Here is the link to the live application: https://ai-organisational-policy-assistant-gj349ppwjx2zgqt7dm82te.streamlit.app/
 
 
 ## Features
