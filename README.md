@@ -34,8 +34,7 @@ Here is the link to the live application: https://ai-organisational-policy-assis
 - OpenAI API (GPT-4.1-mini)
 - Streamlit
 
-- ## System Architecture
-- 
+## System Architecture
 ![System Architecture](screenshots/architecture.jpg)
 
 ## How the System Works
