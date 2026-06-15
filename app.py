@@ -34,7 +34,7 @@ if "db_built" not in st.session_state:
 
 
 st.title("📘 Employee Policy Assistant")
-st.caption("Ask questions about organizational policies.")
+st.caption("This assistant helps employees find answers from company policy documents instantly. Ask questions in plain English and get accurate, grounded responses — no manual document searching required. Responses are based only on the available policies shown on the left.")
 
 st.markdown("### 💡 Example Questions")
 st.markdown("""
